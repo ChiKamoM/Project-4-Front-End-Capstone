@@ -1,4 +1,3 @@
-# Project-4-Front-End-Capstone
 # Pizza place - Project-4-Front-End-Capstone
 Front end website for a resturant, done using html, css and javascript
 ## Demo
