@@ -1,3 +1,55 @@
 *{
       font-family: Rubik;
 }
+/*---------------------------------- Header------------------------- */
+
+
+.logo{
+      height: 100px;
+      width: 300px;
+      background-color: rgb(226, 219, 219);
+}
+
+/*---------------------------------- Hero------------------------- */
+
+.hero-img{
+      width: 100%;
+}
+
+/*---------------------------------- Gallery------------------------- */
+
+/*---------------------------------- Chefs------------------------- */
+
+.slideshow-container{
+      display: flex;
+      justify-content: center;
+}
+.slide{
+      width:fit-content;
+}
+.hidden{
+      display:none
+}
+.next, .prev{
+      font-size: 60px;
+      color: grey;
+      opacity: 0.8;
+      position: relative;
+      top:120px;
+}
+.next:hover, .prev:hover{
+      cursor: pointer;
+}
+.prev{
+      right:530px;
+}
+
+/*---------------------------------- Menu------------------------- */
+.menu{
+      border: 1px solid black;
+      width: 50%;
+      margin: auto;
+}
+.pizza-img{
+      height: 80px;
+}
