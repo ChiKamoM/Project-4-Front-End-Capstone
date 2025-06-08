@@ -1,23 +1,73 @@
 *{
       font-family: Rubik;
 }
+a{
+      text-decoration: none;
+      color: white;
+}
 /*---------------------------------- Header------------------------- */
 
+ header {
+      background-color: rgb(192, 57, 43);
+      padding: 20px;
+ }
+ nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+ }
 
 .logo{
-      height: 100px;
-      width: 300px;
-      background-color: rgb(226, 219, 219);
+      width: 120px;
 }
+nav ul{
+      list-style: none;
+      display: flex;
+}
+nav li {
+      margin-left: 20px;
+}
+nav li:first-child{
+      margin-left: none;
+}
+
 
 /*---------------------------------- Hero------------------------- */
 
-.hero-img{
-      width: 100%;
+#hero {
+      background-image: url("https://placehold.co/400");
+      padding: 4rem 2rem;
+      font-family: "Cabin Sketch";
+      display: flex;
+      flex-direction: column;
+      align-items: center
+;
+}
+h1{
+      font-size: 70px;
+      text-align: center;
+}
+#hero button {
+      background-color: rgb(230, 126, 34);
+      font-size:19px;
+      border: none;
+      border-radius: 14px;
+      padding: 10px;
+}
+button:hover{
+      cursor: pointer;
 }
 
 /*---------------------------------- Gallery------------------------- */
-
+.gallery h2{
+      font-family: "Cabin Sketch";
+      text-align: center;
+}
+.gallery-grid{
+      display: grid;
+      grid-template-columns: repeat(3, 200px);
+      gap:20px;
+}
 /*---------------------------------- Chefs------------------------- */
 
 .slideshow-container{
@@ -43,21 +93,40 @@
 .prev{
       right:530px;
 }
-
-/*---------------------------------- Menu------------------------- */
-.menu{
-      border: 1px solid black;
-      width: 50%;
-      margin: auto;
-      height: 500px;
+/*---------------------------------- Footer------------------------- */
+footer{
+      background-color: rgb(192, 57, 43);
+      display: grid;
+      grid-template-columns: repeat();
 }
+.footer-column{
+      color: white;
+}
+/*---------------------------------- Menu------------------------- */
+h2{
+      text-align:center;
+      font-family: "Cabin Sketch";
+}
+.menu-grid{
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      gap:10px;
+}
+
 .menu-item{
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      border-radius: 14px;
+      padding: 10px;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+
 }
 .pizza-img{
-      height: 80px;
+      width: 150px;
+      border-radius: 10px;
 }
 .price{
-      
+      font-size: 20px;
+      font-weight: bold;
 }
