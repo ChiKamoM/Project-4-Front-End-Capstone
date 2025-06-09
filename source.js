@@ -1,5 +1,7 @@
 //Slideshow gallery
-const slides = document.querySelectorAll(".images");
+ const slides = document.querySelectorAll(".images");
+if (slides.length > 0) {
+
 let slideIndex = 0;
 const prevBttn = document.querySelector(".prev");
 const nextBttn = document.querySelector(".next");
@@ -39,4 +41,17 @@ prevBttn.addEventListener("click", ()=>{
 })
 nextBttn.addEventListener("click", ()=>{
      nextSlide();
-})
+})  
+}
+
+
+
+// Menu modal
+var pizzas = document.querySelectorAll(".menu-item")
+var pizzaIngredients = document.querySelectorAll(".pizza-modal")
+
+pizzas.forEach(pizza => {
+   pizza.addEventListener("click",() => {
+      
+   })
+});
