@@ -50,8 +50,12 @@ nextBttn.addEventListener("click", ()=>{
 var pizzas = document.querySelectorAll(".menu-item")
 var pizzaIngredients = document.querySelectorAll(".pizza-modal")
 
-pizzas.forEach(pizza => {
-   pizza.addEventListener("click",() => {
-      
-   })
+pizzas.forEach((pizza, index) => {
+      pizza.addEventListener("click", () => {
+            let current = index;
+            pizzaIngredients[index].classList.toggle("hidden")
+      })
 });
+
+
+//Form

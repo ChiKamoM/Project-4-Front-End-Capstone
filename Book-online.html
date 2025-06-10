@@ -23,7 +23,30 @@
             </nav>
       </header>
       
-      
+      <section id="order">
+            <form action="submit">
+                  <label for="fName" > Name
+                       <input name="fName" type="text" required> 
+                  </label>
+                  <label for="lName" > Surname
+                       <input name="lName" type="text" required> 
+                  </label>
+                  <label for="Phone number">
+                        Phone number
+                        <input type="text" name="Phone Number" id="" maxlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                  </label>
+                  <label for="Pizza choice">
+                        Pick your pizza
+                        <select name="Pizza choice" id=""   required>
+                              <option selected disabled>Choose here</option>
+                              <option value="Caprese">Caprese</option>
+                              <option value="Carne">Carne</option>
+                              <option value="Chicken-Mayo">Chicken-Mayo</option>
+                              <option value="Margherita">Margherita</option>
+                        </select>
+                  </label>
+            </form>
+      </section>
 
 
       <footer>
