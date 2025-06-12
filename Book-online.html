@@ -12,7 +12,7 @@
 <body>
       <header>
             <nav>
-                  <img src="https://placehold.co/400" alt="" class="logo">
+                  <img src="assets\logo.png" alt="" class="logo">
                   <ul>
                         <li><a href="index.html"> Home</a></li>
                         <li><a href="About.html">About us</a></li>
@@ -24,20 +24,20 @@
       </header>
       
       <section id="order">
-            <form action="submit">
+            <form action="submit" id="form" >
                   <label for="fName" > Name
-                       <input name="fName" type="text" required> 
+                       <input name="fName" type="text" id="fName" required> 
                   </label>
                   <label for="lName" > Surname
-                       <input name="lName" type="text" required> 
+                       <input name="sName" type="text" id="sName" required > 
                   </label>
                   <label for="Phone number">
                         Phone number
-                        <input type="text" name="Phone Number" id="" maxlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        <input type="tel" name="Phone Number" id="pNumber" maxlength="10" pattern="[0-9]" required >
                   </label>
                   <label for="Pizza choice">
                         Pick your pizza
-                        <select name="Pizza choice" id=""   required>
+                        <select name="Pizza choice" id="pizzaChoice" required>
                               <option selected disabled>Choose here</option>
                               <option value="Caprese">Caprese</option>
                               <option value="Carne">Carne</option>
@@ -45,6 +45,7 @@
                               <option value="Margherita">Margherita</option>
                         </select>
                   </label>
+                  <button type="submit">Order Now</button>
             </form>
       </section>
 
