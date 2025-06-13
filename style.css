@@ -1,9 +1,24 @@
 *{
       font-family: Rubik;
 }
+body{ 
+      padding: 0;
+      margin: 0;
+}
 a{
       text-decoration: none;
       color: white;
+}
+.hover{
+      transition: all 0.3s ease-in-out;
+}
+.hover:hover{
+      cursor: pointer;
+      filter: brightness(1.1);
+      transform:translateY(-3px);
+}
+header a:hover{
+      color: #F1C40F;
 }
 /*---------------------------------- Header------------------------- */
 
@@ -36,40 +51,60 @@ nav li:first-child{
 /*---------------------------------- Hero------------------------- */
 
 #hero {
-      background-image: url("assets/oven.png");
+      background-image: url("assets/hero2.png");
       background-repeat: no-repeat;
-      background-size: ;
-      padding: 70px 40px;
+      background-size: cover;
+      padding: 160px 30px;
       font-family: "Cabin Sketch";
+      font-weight: 700;
       display: flex;
       flex-direction: column;
-      align-items: center
+      align-items: center;
 ;
 }
 h1{
-      font-size: 70px;
-      text-align: center;
+      font-family: "Cabin sketch";
+      font-size: 60px;
+      color: #dcd5d5;
+      text-align: center ;
+      margin: 0;
+}
+h3{
+      color: #dcd5d5;
+      font-weight: 500;
 }
 #hero button {
-      background-color: rgb(230, 126, 34);
+      background-color: #2C3E50;
       font-size:19px;
+      font-weight: 600;
       border: none;
-      border-radius: 14px;
-      padding: 10px;
+      border-radius: 24px;
+      padding: 10px 20px;
+      margin-top: 90px;
+      color: #F9F9F9;
+      box-shadow: 2px 2px 10px #3d5266;
 }
 button:hover{
       cursor: pointer;
 }
 
 /*---------------------------------- Gallery------------------------- */
+.gallery{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+}
 .gallery h2{
       font-family: "Cabin Sketch";
+      color: #2C3E50 ;
+      font-size: 40px;
       text-align: center;
 }
 .gallery-grid{
       display: grid;
       grid-template-columns: repeat(3, 200px);
       gap:20px;
+      width:fit-content
 }
 /*---------------------------------- Chefs------------------------- */
 
@@ -100,7 +135,7 @@ button:hover{
 footer{
       background-color: rgb(192, 57, 43);
       display: grid;
-      grid-template-columns: repeat();
+      grid-template-columns: ;
 }
 .footer-column{
       color: white;
@@ -136,7 +171,7 @@ h2{
       font-weight: bold;
 }
 /* Modal  */
-.modal-container{
+.menu-modal-container{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap:10px;

@@ -12,7 +12,7 @@
 <body>
       <header>
             <nav>
-                  <img src="assets\logo.png" alt="" class="logo">
+                  <img src="assets\logo2.png" alt="Logo image" class="logo">
                   <ul>
                         <li><a href="index.html"> Home</a></li>
                         <li><a href="About.html">About us</a></li>
@@ -24,16 +24,16 @@
       </header>
       
       <section id="order">
-            <form action="submit" id="form" >
-                  <label for="fName" > Name
-                       <input name="fName" type="text" id="fName" required> 
+            <form  id="form" >
+                  <label for="first name" > Name
+                       <input name="first name" type="text" id="first-name" required> 
                   </label>
-                  <label for="lName" > Surname
-                       <input name="sName" type="text" id="sName" required > 
+                  <label for="Surname" > Surname
+                       <input name="Surname" type="text" id="surname" required > 
                   </label>
                   <label for="Phone number">
                         Phone number
-                        <input type="tel" name="Phone Number" id="pNumber" maxlength="10" pattern="[0-9]" required >
+                        <input type="tel" name="Phone Number" id="tel-number" maxlength="10" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"  required >
                   </label>
                   <label for="Pizza choice">
                         Pick your pizza
@@ -45,10 +45,18 @@
                               <option value="Margherita">Margherita</option>
                         </select>
                   </label>
-                  <button type="submit">Order Now</button>
+                  <button type="button"  id="validate">Order Now</button>
             </form>
       </section>
-
+      <div class="modal-container hidden" >
+            <div class="order-confirmation">
+                  <h2>Confirm that the following order details are correct</h2>
+                  <p>Name and Surname: <span class="name"></span><span class="surname"></span></p>
+                  <p> Phone number: <span class="phone-number"></span></p>
+                  <p>Pizza: <span class="selected"></span></p>
+                  <button type="button" id="submit"> Order now</button>
+            </div>
+      </div>
 
       <footer>
             <div class="footer-column">
