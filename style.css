@@ -25,11 +25,14 @@ header a:hover{
  header {
       background-color: rgb(192, 57, 43);
       padding: 20px;
+      position: fixed;
+      width: 100vw;
  }
  nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
+
  }
 
 .logo{
@@ -46,6 +49,9 @@ nav li {
 nav li:first-child{
       margin-left: none;
 }
+main{
+      margin-top: 152.7;
+}
 
 
 /*---------------------------------- Hero------------------------- */
@@ -60,7 +66,6 @@ nav li:first-child{
       display: flex;
       flex-direction: column;
       align-items: center;
-;
 }
 h1{
       font-family: "Cabin sketch";
@@ -111,9 +116,14 @@ button:hover{
 .slideshow-container{
       display: flex;
       justify-content: center;
+      margin-left: 10px;
 }
 .slide{
       width:fit-content;
+}
+.slides img{
+      width:450px;
+      height: 300px;
 }
 .hidden{
       display:none
@@ -136,6 +146,8 @@ footer{
       background-color: rgb(192, 57, 43);
       display: grid;
       grid-template-columns: ;
+      margin-top: 30px;
+
 }
 .footer-column{
       color: white;
