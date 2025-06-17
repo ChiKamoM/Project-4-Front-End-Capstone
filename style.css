@@ -26,7 +26,9 @@ header a:hover{
       background-color: rgb(192, 57, 43);
       padding: 20px;
       position: fixed;
-      width: 100vw;
+      top:0;
+      width: 100%;
+      z-index: 99;
  }
  nav {
       display: flex;
@@ -41,23 +43,22 @@ header a:hover{
 }
 nav ul{
       list-style: none;
+      margin-right: 30px;
       display: flex;
 }
 nav li {
       margin-left: 20px;
 }
-nav li:first-child{
-      margin-left: none;
-}
+
 main{
-      margin-top: 152.7;
+      margin-top: 151.71px;
 }
 
 
 /*---------------------------------- Hero------------------------- */
 
 #hero {
-      background-image: url("assets/hero2.png");
+      background-image: url("assets/hero.png");
       background-repeat: no-repeat;
       background-size: cover;
       padding: 160px 30px;
@@ -93,30 +94,12 @@ button:hover{
       cursor: pointer;
 }
 
-/*---------------------------------- Gallery------------------------- */
-.gallery{
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-}
-.gallery h2{
-      font-family: "Cabin Sketch";
-      color: #2C3E50 ;
-      font-size: 40px;
-      text-align: center;
-}
-.gallery-grid{
-      display: grid;
-      grid-template-columns: repeat(3, 200px);
-      gap:20px;
-      width:fit-content
-}
-/*---------------------------------- Chefs------------------------- */
+
+/*---------------------------------- Slideshow------------------------- */
 
 .slideshow-container{
       display: flex;
       justify-content: center;
-      margin-left: 10px;
 }
 .slide{
       width:fit-content;
@@ -134,6 +117,7 @@ button:hover{
       opacity: 0.8;
       position: relative;
       top:120px;
+      z-index: 2;
 }
 .next:hover, .prev:hover{
       cursor: pointer;
@@ -145,17 +129,24 @@ button:hover{
 footer{
       background-color: rgb(192, 57, 43);
       display: grid;
-      grid-template-columns: ;
       margin-top: 30px;
+      color: white;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      
 
 }
-.footer-column{
-      color: white;
+footer p {
+   text-align: center;
 }
+
 /*---------------------------------- Menu------------------------- */
 h2{
       text-align:center;
       font-family: "Cabin Sketch";
+}
+.menu{
+      margin: 40px 0;
 }
 .menu-grid{
       display: grid;
@@ -177,10 +168,12 @@ h2{
 .pizza-img{
       width: 150px;
       border-radius: 10px;
+      margin: 15px;
 }
-.price{
+.price, .menu-item h4{
       font-size: 20px;
       font-weight: bold;
+      margin: 0;
 }
 /* Modal  */
 .menu-modal-container{
@@ -196,7 +189,7 @@ h2{
 .pizza-modal{
       width: 200px;
       padding: 5px;
-      z-index: 99;
+      z-index: 1;
       border: 1px solid black;
       background-color: #2ecc71; 
       border-radius: 16px;     
@@ -233,16 +226,36 @@ form{
       border-style: outset;
       margin: 30px 0;
 }
+form input{
+      width: 60%;
+      border: 2px solid;
+      border-radius: 5px;
+}
+input:invalid{
+      outline: 2px solid red;
+      background-color: #e7caca;
+      border: none;
+}
 form button{
       margin: auto;
 }
 label{
-      margin: 20px 0;
+      margin: 15px 0;
+      font-size: ;
+      font-weight: 500;
+}
+#first-name{
+      margin-left: 35px;
+}
+#surname{
+      margin-left: 9px;
+}
+#tel-number{
+      margin-left: 55px;
 }
 .modal-container{
       background-color: rgba(215, 187, 187, 0.7);
       z-index: 99;
-      pointer-events: none;
       width: 100%;
       height: 100%;
       position: fixed;
@@ -252,11 +265,54 @@ label{
       justify-content: center;
       align-items: center;
 }
+#order button{
+      text-align: center;
+      background-color: #C0392B;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+}
 .order-confirmation{
       background-color: white;
       height: 50%;
+      width:40%;
       font-size: 20px;
+      font-weight: 500;
+      padding: 30px;
+      border-radius: 16px;
+}
+.order-confirmation p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+}
+.confirmation-buttons{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 40px;
+}
+.confirmation-buttons button{
+      text-align: center;
+      background-color: #C0392B;
+      color: white;
       padding: 10px;
+      margin: auto;
+      border-radius: 10px;
+      width:fit-content;
+}
+.order-placed{
+      background-color: white;
+      width: fit-content;
+      height: fit-content;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 30px;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+.order-placed img{
+      width: 150px;
 }
 .hidden{
       display: none;
@@ -265,5 +321,21 @@ label{
 #contact-details{
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template:;
+}
+#contact-details a{
+      color: black;
+      margin-left: 10px;
+}
+
+/* --------------------------------------------------About-------------------------------- */
+.details{
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+}
+.details p{
+      width: 40%;
+}
+h2.chef-name{
+      font-family: roboto;
 }
